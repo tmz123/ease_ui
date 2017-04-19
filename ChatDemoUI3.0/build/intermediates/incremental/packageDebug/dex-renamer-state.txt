@@ -1,0 +1,4 @@
+#Wed Apr 19 09:59:00 CST 2017
+base.0=/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/build/intermediates/transforms/dex/debug/folders/1000/1f/main
+renamed.0=classes.dex
+file.0=/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

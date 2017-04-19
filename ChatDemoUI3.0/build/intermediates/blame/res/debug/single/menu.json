@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/build/intermediates/res/merged/debug/menu/em_context_tab_contact.xml",
+        "source": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/res/menu/em_context_tab_contact.xml"
+    },
+    {
+        "merged": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/build/intermediates/res/merged/debug/menu/em_delete_message.xml",
+        "source": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/res/menu/em_delete_message.xml"
+    },
+    {
+        "merged": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/build/intermediates/res/merged/debug/menu/em_delete_contact.xml",
+        "source": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/res/menu/em_delete_contact.xml"
+    },
+    {
+        "merged": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/build/intermediates/res/merged/debug/menu/em_context_contact_list.xml",
+        "source": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/res/menu/em_context_contact_list.xml"
+    },
+    {
+        "merged": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/build/intermediates/res/merged/debug/menu/em_remove_from_blacklist.xml",
+        "source": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/res/menu/em_remove_from_blacklist.xml"
+    }
+]
