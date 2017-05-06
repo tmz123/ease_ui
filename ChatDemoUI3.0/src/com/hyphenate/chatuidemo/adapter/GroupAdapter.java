@@ -46,7 +46,7 @@ public class GroupAdapter extends ArrayAdapter<EMGroup> {
 
 	@Override
 	public int getViewTypeCount() {
-		return 4;
+		return 3;
 	}
 
 	@Override
@@ -55,8 +55,6 @@ public class GroupAdapter extends ArrayAdapter<EMGroup> {
 			return 0;
 		} else if (position == 1) {
 			return 1;
-		} else if (position == 2) {
-			return 2;
 		} else {
 			return 3;
 		}
@@ -98,19 +96,11 @@ public class GroupAdapter extends ArrayAdapter<EMGroup> {
 			}
 			((ImageView) convertView.findViewById(R.id.avatar)).setImageResource(R.drawable.em_create_group);
 			((TextView) convertView.findViewById(R.id.name)).setText(newGroup);
-		} else if (getItemViewType(position) == 2) {
-			if (convertView == null) {
-				convertView = inflater.inflate(R.layout.em_row_add_group, parent, false);
-			}
-			((ImageView) convertView.findViewById(R.id.avatar)).setImageResource(R.drawable.em_add_public_group);
-			((TextView) convertView.findViewById(R.id.name)).setText(addPublicGroup);
-			((TextView) convertView.findViewById(R.id.header)).setVisibility(View.VISIBLE);
-
 		} else {
 			if (convertView == null) {
 				convertView = inflater.inflate(R.layout.em_row_group, parent, false);
 			}
-			((TextView) convertView.findViewById(R.id.name)).setText(getItem(position - 3).getGroupName());
+			((TextView) convertView.findViewById(R.id.name)).setText(getItem(position - 2).getGroupName());
 
 		}
 
@@ -119,7 +109,7 @@ public class GroupAdapter extends ArrayAdapter<EMGroup> {
 
 	@Override
 	public int getCount() {
-		return super.getCount() + 3;
+		return super.getCount() + 2;
 	}
 
 }

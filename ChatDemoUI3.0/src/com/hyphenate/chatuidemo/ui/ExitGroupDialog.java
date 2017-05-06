@@ -20,8 +20,9 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.hyphenate.chatuidemo.R;
+import com.hyphenate.easeui.ui.EaseBaseActivity;
 
-public class ExitGroupDialog extends BaseActivity{
+public class ExitGroupDialog extends EaseBaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

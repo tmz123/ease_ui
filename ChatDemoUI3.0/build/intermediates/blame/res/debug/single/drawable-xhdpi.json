@@ -1,102 +1,102 @@
 [
     {
-        "merged": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_new_friends_icon.png",
-        "source": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/res/drawable-xhdpi/em_new_friends_icon.png"
+        "merged": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_create_group.png",
+        "source": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/res/drawable-xhdpi/em_create_group.png"
     },
     {
-        "merged": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_splash.png",
-        "source": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/res/drawable-xhdpi/em_splash.png"
+        "merged": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_icon_mute_on.png",
+        "source": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/res/drawable-xhdpi/em_icon_mute_on.png"
     },
     {
-        "merged": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_icon_mute_normal.png",
-        "source": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/res/drawable-xhdpi/em_icon_mute_normal.png"
+        "merged": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_icon_mute_normal.png",
+        "source": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/res/drawable-xhdpi/em_icon_mute_normal.png"
     },
     {
-        "merged": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_unread_dot.9.png",
-        "source": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/res/drawable-xhdpi/em_unread_dot.9.png"
+        "merged": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_settings_selected.png",
+        "source": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/res/drawable-xhdpi/em_settings_selected.png"
     },
     {
-        "merged": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_chat_video_call_normal.png",
-        "source": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/res/drawable-xhdpi/em_chat_video_call_normal.png"
+        "merged": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_chat_video_call_normal.png",
+        "source": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/res/drawable-xhdpi/em_chat_video_call_normal.png"
     },
     {
-        "merged": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_icon_speaker_normal.png",
-        "source": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/res/drawable-xhdpi/em_icon_speaker_normal.png"
+        "merged": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_chat_video_call_pressed.png",
+        "source": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/res/drawable-xhdpi/em_chat_video_call_pressed.png"
     },
     {
-        "merged": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_icon_mute_on.png",
-        "source": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/res/drawable-xhdpi/em_icon_mute_on.png"
+        "merged": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_chat_video_pressed.png",
+        "source": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/res/drawable-xhdpi/em_chat_video_pressed.png"
     },
     {
-        "merged": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_chat_file_pressed.png",
-        "source": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/res/drawable-xhdpi/em_chat_file_pressed.png"
+        "merged": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_new_friends_icon.png",
+        "source": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/res/drawable-xhdpi/em_new_friends_icon.png"
     },
     {
-        "merged": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_create_group.png",
-        "source": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/res/drawable-xhdpi/em_create_group.png"
+        "merged": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_chat_file_pressed.png",
+        "source": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/res/drawable-xhdpi/em_chat_file_pressed.png"
     },
     {
-        "merged": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_chat_video_pressed.png",
-        "source": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/res/drawable-xhdpi/em_chat_video_pressed.png"
+        "merged": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_to_group_details_normal.png",
+        "source": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/res/drawable-xhdpi/em_to_group_details_normal.png"
     },
     {
-        "merged": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_icon_speaker_on.png",
-        "source": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/res/drawable-xhdpi/em_icon_speaker_on.png"
+        "merged": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_chat_file_normal.png",
+        "source": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/res/drawable-xhdpi/em_chat_file_normal.png"
     },
     {
-        "merged": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_chat_voice_call_pressed.png",
-        "source": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/res/drawable-xhdpi/em_chat_voice_call_pressed.png"
+        "merged": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_splash.png",
+        "source": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/res/drawable-xhdpi/em_splash.png"
     },
     {
-        "merged": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_to_group_details_normal.png",
-        "source": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/res/drawable-xhdpi/em_to_group_details_normal.png"
+        "merged": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_group_icon.png",
+        "source": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/res/drawable-xhdpi/em_group_icon.png"
     },
     {
-        "merged": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_settings_normal.png",
-        "source": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/res/drawable-xhdpi/em_settings_normal.png"
+        "merged": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_add_public_group.png",
+        "source": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/res/drawable-xhdpi/em_add_public_group.png"
     },
     {
-        "merged": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_chat_file_normal.png",
-        "source": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/res/drawable-xhdpi/em_chat_file_normal.png"
+        "merged": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_settings_normal.png",
+        "source": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/res/drawable-xhdpi/em_settings_normal.png"
     },
     {
-        "merged": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_splash_logo.png",
-        "source": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/res/drawable-xhdpi/em_splash_logo.png"
+        "merged": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_logo_uidemo.png",
+        "source": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/res/drawable-xhdpi/em_logo_uidemo.png"
     },
     {
-        "merged": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_group_icon.png",
-        "source": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/res/drawable-xhdpi/em_group_icon.png"
+        "merged": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_chat_voice_call_pressed.png",
+        "source": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/res/drawable-xhdpi/em_chat_voice_call_pressed.png"
     },
     {
-        "merged": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_chat_voice_call_normal.png",
-        "source": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/res/drawable-xhdpi/em_chat_voice_call_normal.png"
+        "merged": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_splash_logo.png",
+        "source": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/res/drawable-xhdpi/em_splash_logo.png"
     },
     {
-        "merged": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_groups_icon.png",
-        "source": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/res/drawable-xhdpi/em_groups_icon.png"
+        "merged": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_chat_voice_call_normal.png",
+        "source": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/res/drawable-xhdpi/em_chat_voice_call_normal.png"
     },
     {
-        "merged": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_chat_video_normal.png",
-        "source": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/res/drawable-xhdpi/em_chat_video_normal.png"
+        "merged": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_icon_speaker_normal.png",
+        "source": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/res/drawable-xhdpi/em_icon_speaker_normal.png"
     },
     {
-        "merged": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_chat_video_call_pressed.png",
-        "source": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/res/drawable-xhdpi/em_chat_video_call_pressed.png"
+        "merged": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_groups_icon.png",
+        "source": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/res/drawable-xhdpi/em_groups_icon.png"
     },
     {
-        "merged": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_add_public_group.png",
-        "source": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/res/drawable-xhdpi/em_add_public_group.png"
+        "merged": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_chat_video_normal.png",
+        "source": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/res/drawable-xhdpi/em_chat_video_normal.png"
     },
     {
-        "merged": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_unread_count_bg.9.png",
-        "source": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/res/drawable-xhdpi/em_unread_count_bg.9.png"
+        "merged": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_unread_count_bg.9.png",
+        "source": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/res/drawable-xhdpi/em_unread_count_bg.9.png"
     },
     {
-        "merged": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_logo_uidemo.png",
-        "source": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/res/drawable-xhdpi/em_logo_uidemo.png"
+        "merged": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_icon_speaker_on.png",
+        "source": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/res/drawable-xhdpi/em_icon_speaker_on.png"
     },
     {
-        "merged": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_settings_selected.png",
-        "source": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/res/drawable-xhdpi/em_settings_selected.png"
+        "merged": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-xhdpi/em_unread_dot.9.png",
+        "source": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/res/drawable-xhdpi/em_unread_dot.9.png"
     }
 ]

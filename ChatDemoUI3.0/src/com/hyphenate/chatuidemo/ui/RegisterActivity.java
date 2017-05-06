@@ -13,12 +13,6 @@
  */
 package com.hyphenate.chatuidemo.ui;
 
-import com.hyphenate.EMError;
-import com.hyphenate.chat.EMClient;
-import com.hyphenate.chatuidemo.DemoHelper;
-import com.hyphenate.chatuidemo.R;
-import com.hyphenate.exceptions.HyphenateException;
-
 import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -26,11 +20,18 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.hyphenate.EMError;
+import com.hyphenate.chat.EMClient;
+import com.hyphenate.chatuidemo.DemoHelper;
+import com.hyphenate.chatuidemo.R;
+import com.hyphenate.easeui.ui.EaseBaseActivity;
+import com.hyphenate.exceptions.HyphenateException;
+
 /**
  * register screen
  * 
  */
-public class RegisterActivity extends BaseActivity {
+public class RegisterActivity extends EaseBaseActivity {
 	private EditText userNameEditText;
 	private EditText passwordEditText;
 	private EditText confirmPwdEditText;

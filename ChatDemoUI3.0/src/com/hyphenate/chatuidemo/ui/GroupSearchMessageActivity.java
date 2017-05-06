@@ -25,13 +25,14 @@ import com.hyphenate.chat.EMConversation.EMSearchDirection;
 import com.hyphenate.chat.EMMessage;
 import com.hyphenate.chat.EMTextMessageBody;
 import com.hyphenate.chatuidemo.R;
+import com.hyphenate.easeui.ui.EaseBaseActivity;
 import com.hyphenate.easeui.utils.EaseUserUtils;
 import com.hyphenate.util.DateUtils;
 
 import java.util.Date;
 import java.util.List;
 
-public class GroupSearchMessageActivity extends BaseActivity implements OnClickListener{
+public class GroupSearchMessageActivity extends EaseBaseActivity implements OnClickListener {
     private ImageButton clearSearch;
     private EditText query;
     private ListView listView;

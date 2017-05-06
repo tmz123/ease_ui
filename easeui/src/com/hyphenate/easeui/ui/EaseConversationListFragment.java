@@ -55,9 +55,9 @@ public class EaseConversationListFragment extends EaseBaseFragment{
 		public void onCoversationUpdate() {
 			refresh();
 		}
-    	
+
     };
-    
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return inflater.inflate(R.layout.ease_fragment_conversation_list, container, false);
