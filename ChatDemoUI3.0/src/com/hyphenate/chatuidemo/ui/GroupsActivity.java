@@ -34,18 +34,18 @@ import com.hyphenate.chat.EMGroup;
 import com.hyphenate.chatuidemo.Constant;
 import com.hyphenate.chatuidemo.R;
 import com.hyphenate.chatuidemo.adapter.GroupAdapter;
+import com.hyphenate.easeui.ui.EaseBaseActivity;
 import com.hyphenate.exceptions.HyphenateException;
 
 import java.util.List;
 
-public class GroupsActivity extends BaseActivity {
-	public static final String TAG = "GroupsActivity";
+public class GroupsActivity extends EaseBaseActivity {
+    public static final String TAG = "GroupsActivity";
 	private ListView groupListView;
 	protected List<EMGroup> grouplist;
 	private GroupAdapter groupAdapter;
 	private InputMethodManager inputMethodManager;
 	public static GroupsActivity instance;
-	private View progressBar;
 	private SwipeRefreshLayout swipeRefreshLayout;
 	
 	
@@ -110,16 +110,13 @@ public class GroupsActivity extends BaseActivity {
 				if (position == 1) {
 					// create a new group
 					startActivityForResult(new Intent(GroupsActivity.this, NewGroupActivity.class), 0);
-				} else if (position == 2) {
-					// join a public group
-					startActivityForResult(new Intent(GroupsActivity.this, PublicGroupsActivity.class), 0);
 				} else {
 					// enter group chat
 					Intent intent = new Intent(GroupsActivity.this, ChatActivity.class);
 					// it is group chat
 					intent.putExtra("chatType", Constant.CHATTYPE_GROUP);
-					intent.putExtra("userId", groupAdapter.getItem(position - 3).getGroupId());
-					startActivityForResult(intent, 0);
+                    intent.putExtra("userId", groupAdapter.getItem(position - 2).getGroupId());
+                    startActivityForResult(intent, 0);
 				}
 			}
 

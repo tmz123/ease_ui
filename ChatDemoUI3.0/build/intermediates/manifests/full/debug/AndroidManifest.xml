@@ -106,18 +106,6 @@
             android:theme="@style/horizontal_slide"
             android:windowSoftInputMode="adjustPan" />
 
-        <!-- 聊天室详情 -->
-        <activity
-            android:name="com.hyphenate.chatuidemo.ui.ChatRoomDetailsActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide" />
-        <!-- 新建聊天室 -->
-        <activity
-            android:name="com.hyphenate.chatuidemo.ui.NewChatRoomActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="adjustPan" />
-
         <!-- 新建群组 -->
         <activity
             android:name="com.hyphenate.chatuidemo.ui.NewGroupActivity"
@@ -135,32 +123,12 @@
             android:screenOrientation="portrait"
             android:theme="@style/horizontal_slide"
             android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name="com.hyphenate.chatuidemo.ui.PickAtUserActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide" />
-        <!-- 地图 -->
-        <activity
-            android:name="com.hyphenate.easeui.ui.EaseBaiduMapActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide" />
 
         <!-- 新的朋友邀请消息页面 -->
         <activity
             android:name="com.hyphenate.chatuidemo.ui.NewFriendsMsgActivity"
             android:screenOrientation="portrait"
             android:theme="@style/horizontal_slide" />
-        <!-- 转发消息用户列表页面 -->
-        <activity
-            android:name="com.hyphenate.chatuidemo.ui.ForwardMessageActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="adjustPan" />
-        <!-- 自定义的contextmenu -->
-        <activity
-            android:name="com.hyphenate.chatuidemo.ui.ContextMenuActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/MyDialogStyle" />
         <!-- 显示下载大图页面 -->
         <activity
             android:name="com.hyphenate.easeui.ui.EaseShowBigImageActivity"
@@ -171,45 +139,9 @@
             android:name="com.hyphenate.easeui.ui.EaseShowNormalFileActivity"
             android:screenOrientation="portrait"
             android:theme="@style/horizontal_slide" />
-        <!-- 黑名单 -->
-        <activity
-            android:name="com.hyphenate.chatuidemo.ui.BlacklistActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide" />
-
-        <!-- 公开的群聊列表 -->
-        <activity
-            android:name="com.hyphenate.chatuidemo.ui.PublicGroupsActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="adjustPan" />
-        <activity
-            android:name="com.hyphenate.chatuidemo.ui.PublicChatRoomsActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="adjustPan" />
-
-        <!-- 语音通话 -->
-        <activity
-            android:name="com.hyphenate.chatuidemo.ui.VoiceCallActivity"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait"
-            android:theme="@style/nornal_style" />
-        <!-- 视频通话 -->
-        <activity
-            android:name="com.hyphenate.chatuidemo.ui.VideoCallActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide" />
         <!-- 群聊简单信息 -->
         <activity
-            android:name="com.hyphenate.chatuidemo.ui.GroupSimpleDetailActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide" />
-        <!-- 群组黑名单用户列表 -->
-        <activity
-            android:name="com.hyphenate.chatuidemo.ui.GroupBlacklistActivity"
+            android:name="com.hyphenate.chatuidemo.ui.UserProfileActivity"
             android:screenOrientation="portrait"
             android:theme="@style/horizontal_slide" />
         <activity
@@ -217,10 +149,6 @@
             android:screenOrientation="portrait"
             android:theme="@style/horizontal_slide"
             android:windowSoftInputMode="stateVisible" />
-        <activity
-            android:name="com.hyphenate.chatuidemo.ui.PublicGroupsSeachActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide" />
         <activity
             android:name="com.hyphenate.chatuidemo.ui.EditActivity"
             android:screenOrientation="portrait"
@@ -242,108 +170,6 @@
             android:screenOrientation="portrait"
             android:theme="@style/horizontal_slide"
             android:windowSoftInputMode="stateAlwaysHidden" />
-        <!-- upload error log -->
-        <activity
-            android:name="com.hyphenate.chatuidemo.ui.DiagnoseActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="stateAlwaysHidden" />
-
-        <!-- iOS offline push nick -->
-        <activity
-            android:name="com.hyphenate.chatuidemo.ui.OfflinePushNickActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="stateAlwaysHidden" />
-        <!-- robots list -->
-        <activity
-            android:name="com.hyphenate.chatuidemo.ui.RobotsActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="stateAlwaysHidden" />
-        <!-- user profile -->
-        <activity
-            android:name="com.hyphenate.chatuidemo.ui.UserProfileActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide" />
-        <activity
-            android:name="com.hyphenate.chatuidemo.ui.SetServersActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide" />
-        <activity
-            android:name="com.hyphenate.chatuidemo.ui.OfflinePushSettingsActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide" />
-        <activity
-            android:name="com.hyphenate.chatuidemo.ui.CallOptionActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide" />
-
-        <!-- 红包相关Activity start -->
-        <!-- 发红包 -->
-        <activity
-            android:name="com.easemob.redpacketui.ui.activity.RPRedPacketActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="adjustPan|stateVisible" />
-        <!-- 红包详情 -->
-        <activity
-            android:name="com.easemob.redpacketui.ui.activity.RPDetailActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="adjustPan" />
-        <!-- 红包记录 -->
-        <activity
-            android:name="com.easemob.redpacketui.ui.activity.RPRecordActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="adjustPan" />
-        <!-- WebView相关 -->
-        <activity
-            android:name="com.easemob.redpacketui.ui.activity.RPWebViewActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
-        <!-- 零钱 -->
-        <activity
-            android:name="com.easemob.redpacketui.ui.activity.RPChangeActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
-        <!-- 绑定银行卡 -->
-        <activity
-            android:name="com.easemob.redpacketui.ui.activity.RPBankCardActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!-- 群成员列表页 -->
-        <activity
-            android:name="com.easemob.redpacketui.ui.activity.RPGroupMemberActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!-- 支付宝h5支付页面 -->
-        <activity
-            android:name="com.alipay.sdk.app.H5PayActivity"
-            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
-            android:exported="false"
-            android:screenOrientation="behind"
-            android:windowSoftInputMode="adjustResize|stateHidden" />
-        <!-- 转账页面 -->
-        <activity
-            android:name="com.easemob.redpacketui.ui.activity.RPTransferActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="adjustPan|stateVisible" />
-        <!-- 转账详情页面 -->
-        <activity
-            android:name="com.easemob.redpacketui.ui.activity.RPTransferDetailActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/horizontal_slide"
-            android:windowSoftInputMode="adjustPan|stateHidden" />
-        <!-- 红包相关Activity end -->
-
-
         <!-- 开机自启动服务 -->
         <receiver android:name="com.hyphenate.chatuidemo.receiver.StartServiceReceiver" >
             <intent-filter android:priority="1000" >

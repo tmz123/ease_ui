@@ -5,14 +5,11 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import com.hyphenate.chatuidemo.R;
 import com.hyphenate.chatuidemo.runtimepermissions.PermissionsManager;
+import com.hyphenate.easeui.ui.EaseBaseActivity;
 import com.hyphenate.easeui.ui.EaseChatFragment;
 import com.hyphenate.util.EasyUtils;
 
-/**
- * chat activity，EaseChatFragment was used {@link #EaseChatFragment}
- *
- */
-public class ChatActivity extends BaseActivity{
+public class ChatActivity extends EaseBaseActivity {
     public static ChatActivity activityInstance;
     private EaseChatFragment chatFragment;
     String toChatUsername;

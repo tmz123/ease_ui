@@ -21,6 +21,7 @@ import com.hyphenate.chatuidemo.R;
 import com.hyphenate.chatuidemo.adapter.NewFriendsMsgAdapter;
 import com.hyphenate.chatuidemo.db.InviteMessgeDao;
 import com.hyphenate.chatuidemo.domain.InviteMessage;
+import com.hyphenate.easeui.ui.EaseBaseActivity;
 
 import java.util.List;
 
@@ -28,7 +29,7 @@ import java.util.List;
  * Application and notification
  *
  */
-public class NewFriendsMsgActivity extends BaseActivity {
+public class NewFriendsMsgActivity extends EaseBaseActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

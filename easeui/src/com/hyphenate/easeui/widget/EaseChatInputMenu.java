@@ -67,11 +67,7 @@ public class EaseChatInputMenu extends LinearLayout {
         primaryMenuContainer = (FrameLayout) findViewById(R.id.primary_menu_container);
         emojiconMenuContainer = (FrameLayout) findViewById(R.id.emojicon_menu_container);
         chatExtendMenuContainer = (FrameLayout) findViewById(R.id.extend_menu_container);
-
-         // extend menu
-         chatExtendMenu = (EaseChatExtendMenu) findViewById(R.id.extend_menu);
-        
-
+        chatExtendMenu = (EaseChatExtendMenu) findViewById(R.id.extend_menu);
     }
 
     /**
@@ -85,21 +81,12 @@ public class EaseChatInputMenu extends LinearLayout {
         if(inited){
             return;
         }
-        // primary menu, use default if no customized one
-        if(chatPrimaryMenu == null){
-            chatPrimaryMenu = (EaseChatPrimaryMenu) layoutInflater.inflate(R.layout.ease_layout_chat_primary_menu, null);
-        }
+        chatPrimaryMenu = (EaseChatPrimaryMenu) layoutInflater.inflate(R.layout.ease_layout_chat_primary_menu, null);
         primaryMenuContainer.addView(chatPrimaryMenu);
-
-        // emojicon menu, use default if no customized one
-        if(emojiconMenu == null){
-            emojiconMenu = (EaseEmojiconMenu) layoutInflater.inflate(R.layout.ease_layout_emojicon_menu, null);
-            if(emojiconGroupList == null){
-                emojiconGroupList = new ArrayList<EaseEmojiconGroupEntity>();
-                emojiconGroupList.add(new EaseEmojiconGroupEntity(R.drawable.ee_1,  Arrays.asList(EaseDefaultEmojiconDatas.getData())));
-            }
-            ((EaseEmojiconMenu)emojiconMenu).init(emojiconGroupList);
-        }
+        emojiconMenu = (EaseEmojiconMenu) layoutInflater.inflate(R.layout.ease_layout_emojicon_menu, null);
+        emojiconGroupList = new ArrayList<>();
+        emojiconGroupList.add(new EaseEmojiconGroupEntity(R.drawable.ee_1, Arrays.asList(EaseDefaultEmojiconDatas.getData())));
+        ((EaseEmojiconMenu) emojiconMenu).init(emojiconGroupList);
         emojiconMenuContainer.addView(emojiconMenu);
 
         processChatMenu();

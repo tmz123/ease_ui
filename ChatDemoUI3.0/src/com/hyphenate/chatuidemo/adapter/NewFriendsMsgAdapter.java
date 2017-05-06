@@ -13,14 +13,6 @@
  */
 package com.hyphenate.chatuidemo.adapter;
 
-import java.util.List;
-
-import com.hyphenate.chat.EMClient;
-import com.hyphenate.chatuidemo.R;
-import com.hyphenate.chatuidemo.db.InviteMessgeDao;
-import com.hyphenate.chatuidemo.domain.InviteMessage;
-import com.hyphenate.chatuidemo.domain.InviteMessage.InviteMesageStatus;
-
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.ContentValues;
@@ -35,6 +27,14 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.hyphenate.chat.EMClient;
+import com.hyphenate.chatuidemo.R;
+import com.hyphenate.chatuidemo.db.InviteMessgeDao;
+import com.hyphenate.chatuidemo.domain.InviteMessage;
+import com.hyphenate.chatuidemo.domain.InviteMessage.InviteMesageStatus;
+
+import java.util.List;
 
 public class NewFriendsMsgAdapter extends ArrayAdapter<InviteMessage> {
 
@@ -165,10 +165,8 @@ public class NewFriendsMsgAdapter extends ArrayAdapter<InviteMessage> {
 
 	/**
 	 * accept invitation
-	 * 
-	 * @param button
-	 * @param username
-	 */
+     *
+     */
 	private void acceptInvitation(final Button buttonAgree, final Button buttonRefuse, final InviteMessage msg) {
 		final ProgressDialog pd = new ProgressDialog(context);
 		String str1 = context.getResources().getString(R.string.Are_agree_with);
@@ -223,9 +221,7 @@ public class NewFriendsMsgAdapter extends ArrayAdapter<InviteMessage> {
 	
 	/**
      * decline invitation
-     * 
-     * @param button
-     * @param username
+     *
      */
     private void refuseInvitation(final Button buttonAgree, final Button buttonRefuse, final InviteMessage msg) {
         final ProgressDialog pd = new ProgressDialog(context);

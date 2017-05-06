@@ -13,13 +13,12 @@
  */
 package com.hyphenate.chatuidemo.db;
 
-import java.util.List;
-import java.util.Map;
-
 import android.content.Context;
 
-import com.hyphenate.chatuidemo.domain.RobotUser;
 import com.hyphenate.easeui.domain.EaseUser;
+
+import java.util.List;
+import java.util.Map;
 
 public class UserDao {
 	public static final String TABLE_NAME = "uers";
@@ -89,13 +88,5 @@ public class UserDao {
     
     public List<String> getDisabledIds(){
         return DemoDBManager.getInstance().getDisabledIds();
-    }
-    
-    public Map<String, RobotUser> getRobotUser(){
-    	return DemoDBManager.getInstance().getRobotList();
-    }
-    
-    public void saveRobotUser(List<RobotUser> robotList){
-    	DemoDBManager.getInstance().saveRobotList(robotList);
     }
 }

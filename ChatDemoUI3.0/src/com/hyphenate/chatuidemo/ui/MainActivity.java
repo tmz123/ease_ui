@@ -14,7 +14,6 @@
 package com.hyphenate.chatuidemo.ui;
 
 import android.annotation.SuppressLint;
-import android.annotation.TargetApi;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -31,7 +30,6 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.easemob.redpacketsdk.constant.RPConstant;
 import com.hyphenate.EMContactListener;
 import com.hyphenate.EMMessageListener;
 import com.hyphenate.chat.EMClient;
@@ -43,42 +41,40 @@ import com.hyphenate.chatuidemo.DemoHelper;
 import com.hyphenate.chatuidemo.R;
 import com.hyphenate.chatuidemo.db.InviteMessgeDao;
 import com.hyphenate.chatuidemo.runtimepermissions.PermissionsManager;
-import com.hyphenate.chatuidemo.runtimepermissions.PermissionsResultAction;
+import com.hyphenate.easeui.ui.EaseBaseActivity;
 import com.hyphenate.easeui.utils.EaseCommonUtils;
 import com.hyphenate.util.EMLog;
 
 import java.util.List;
 
 @SuppressLint("NewApi")
-public class MainActivity extends BaseActivity {
-	protected static final String TAG = "MainActivity";
-	// textview for unread message count
+public class MainActivity extends EaseBaseActivity {
+    // user logged into another device
+    public boolean isConflict = false;
+    // textview for unread message count
 	private TextView unreadLabel;
 	// textview for unread event message
 	private TextView unreadAddressLable;
 	private Button[] mTabs;
 	private ContactListFragment contactListFragment;
 	private Fragment[] fragments;
-	private int index;
+    private android.app.AlertDialog.Builder exceptionBuilder;
+    private boolean isExceptionDialogShow = false;
+    private ConversationListFragment conversationListFragment;
+    private BroadcastReceiver broadcastReceiver;
+    private LocalBroadcastManager broadcastManager;
+    private int index;
 	private int currentTabIndex;
-	// user logged into another device
-	public boolean isConflict = false;
-	// user account was removed
+    private static final String TAG = "MainActivity";
+    // user account was removed
 	private boolean isCurrentAccountRemoved = false;
 
-	/**
-	 * check if current user account was remove
-	 */
-	public boolean getCurrentAccountRemoved() {
-		return isCurrentAccountRemoved;
-	}
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
-		//make sure activity will not in background if user is logged into another device or removed
-		if (savedInstanceState != null && savedInstanceState.getBoolean(Constant.ACCOUNT_REMOVED, false)) {
+        // 如果该用户被删除或者是在其他设备上登录就登出此账号，返回登录页面
+        if (savedInstanceState != null && savedInstanceState.getBoolean(Constant.ACCOUNT_REMOVED, false)) {
 		    DemoHelper.getInstance().logout(false,null);
 			finish();
 			startActivity(new Intent(this, LoginActivity.class));
@@ -89,8 +85,6 @@ public class MainActivity extends BaseActivity {
 			return;
 		}
 		setContentView(R.layout.em_activity_main);
-		// runtime permission for android 6.0, just require all permissions here for simple
-		requestPermissions();
 
 		initView();
 
@@ -108,25 +102,16 @@ public class MainActivity extends BaseActivity {
 
 		//register broadcast receiver to receive the change of group from DemoHelper
 		registerBroadcastReceiver();
-		
-		
-		EMClient.getInstance().contactManager().setContactListener(new MyContactListener());
+        // 联系人Item监听器
+        EMClient.getInstance().contactManager().setContactListener(new MyContactListener());
 	}
 
-	@TargetApi(23)
-	private void requestPermissions() {
-		PermissionsManager.getInstance().requestAllManifestPermissionsIfNecessary(this, new PermissionsResultAction() {
-			@Override
-			public void onGranted() {
-//				Toast.makeText(MainActivity.this, "All permissions have been granted", Toast.LENGTH_SHORT).show();
-			}
-
-			@Override
-			public void onDenied(String permission) {
-				//Toast.makeText(MainActivity.this, "Permission " + permission + " has been denied", Toast.LENGTH_SHORT).show();
-			}
-		});
-	}
+    /**
+     * 检查用户是否被删除
+     */
+    public boolean getCurrentAccountRemoved() {
+        return isCurrentAccountRemoved;
+    }
 
 	/**
 	 * init views
@@ -230,7 +215,6 @@ public class MainActivity extends BaseActivity {
         IntentFilter intentFilter = new IntentFilter();
         intentFilter.addAction(Constant.ACTION_CONTACT_CHANAGED);
         intentFilter.addAction(Constant.ACTION_GROUP_CHANAGED);
-		intentFilter.addAction(RPConstant.REFRESH_GROUP_RED_PACKET_ACTION);
         broadcastReceiver = new BroadcastReceiver() {
             
             @Override
@@ -253,13 +237,6 @@ public class MainActivity extends BaseActivity {
                         GroupsActivity.instance.onResume();
                     }
                 }
-				//red packet code : 处理红包回执透传消息
-				if (action.equals(RPConstant.REFRESH_GROUP_RED_PACKET_ACTION)){
-					if (conversationListFragment != null){
-						conversationListFragment.refresh();
-					}
-				}
-				//end of red packet code
 			}
         };
         broadcastManager.registerReceiver(broadcastReceiver, intentFilter);
@@ -305,11 +282,6 @@ public class MainActivity extends BaseActivity {
 		    isExceptionDialogShow = false;
 		}
 		unregisterBroadcastReceiver();
-
-		try {
-            unregisterReceiver(internalDebugReceiver);
-        } catch (Exception e) {
-        }
 		
 	}
 
@@ -414,13 +386,6 @@ public class MainActivity extends BaseActivity {
 		return super.onKeyDown(keyCode, event);
 	}
 
-	private android.app.AlertDialog.Builder exceptionBuilder;
-	private boolean isExceptionDialogShow =  false;
-    private BroadcastReceiver internalDebugReceiver;
-    private ConversationListFragment conversationListFragment;
-    private BroadcastReceiver broadcastReceiver;
-    private LocalBroadcastManager broadcastManager;
-
     private int getExceptionMessageId(String exceptionType) {
          if(exceptionType.equals(Constant.ACCOUNT_CONFLICT)) {
              return R.string.connect_conflict;
@@ -482,10 +447,10 @@ public class MainActivity extends BaseActivity {
 	protected void onNewIntent(Intent intent) {
 		super.onNewIntent(intent);
 		showExceptionDialogFromIntent(intent);
-	}
+    }
 
-	@Override 
-	public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
+	@Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
 			@NonNull int[] grantResults) {
 		PermissionsManager.getInstance().notifyPermissionsChange(permissions, grantResults);
 	}

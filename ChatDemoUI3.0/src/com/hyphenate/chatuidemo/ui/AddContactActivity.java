@@ -26,10 +26,11 @@ import android.widget.Toast;
 import com.hyphenate.chat.EMClient;
 import com.hyphenate.chatuidemo.DemoHelper;
 import com.hyphenate.chatuidemo.R;
+import com.hyphenate.easeui.ui.EaseBaseActivity;
 import com.hyphenate.easeui.widget.EaseAlertDialog;
 
-public class AddContactActivity extends BaseActivity{
-	private EditText editText;
+public class AddContactActivity extends EaseBaseActivity {
+    private EditText editText;
 	private RelativeLayout searchedUserLayout;
 	private TextView nameText;
 	private Button searchBtn;

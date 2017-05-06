@@ -7,9 +7,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.hyphenate.chatuidemo.R;
+import com.hyphenate.easeui.ui.EaseBaseActivity;
 
-public class EditActivity extends BaseActivity{
-	private EditText editText;
+public class EditActivity extends EaseBaseActivity {
+    private EditText editText;
 
 
 	@Override

@@ -4,14 +4,11 @@ import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.os.Message;
 import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.easemob.redpacketsdk.constant.RPConstant;
-import com.easemob.redpacketui.utils.RedPacketUtil;
 import com.hyphenate.EMCallBack;
 import com.hyphenate.EMConnectionListener;
 import com.hyphenate.EMContactListener;
@@ -31,23 +28,15 @@ import com.hyphenate.chat.EMTextMessageBody;
 import com.hyphenate.chatuidemo.db.DemoDBManager;
 import com.hyphenate.chatuidemo.db.InviteMessgeDao;
 import com.hyphenate.chatuidemo.db.UserDao;
-import com.hyphenate.chatuidemo.domain.EmojiconExampleGroupData;
 import com.hyphenate.chatuidemo.domain.InviteMessage;
 import com.hyphenate.chatuidemo.domain.InviteMessage.InviteMesageStatus;
-import com.hyphenate.chatuidemo.domain.RobotUser;
 import com.hyphenate.chatuidemo.parse.UserProfileManager;
-import com.hyphenate.chatuidemo.receiver.CallReceiver;
 import com.hyphenate.chatuidemo.ui.ChatActivity;
 import com.hyphenate.chatuidemo.ui.MainActivity;
-import com.hyphenate.chatuidemo.ui.VideoCallActivity;
-import com.hyphenate.chatuidemo.ui.VoiceCallActivity;
 import com.hyphenate.chatuidemo.utils.PreferenceManager;
 import com.hyphenate.easeui.controller.EaseUI;
-import com.hyphenate.easeui.controller.EaseUI.EaseEmojiconInfoProvider;
 import com.hyphenate.easeui.controller.EaseUI.EaseSettingsProvider;
 import com.hyphenate.easeui.controller.EaseUI.EaseUserProfileProvider;
-import com.hyphenate.easeui.domain.EaseEmojicon;
-import com.hyphenate.easeui.domain.EaseEmojiconGroupEntity;
 import com.hyphenate.easeui.domain.EaseUser;
 import com.hyphenate.easeui.model.EaseAtMessageHelper;
 import com.hyphenate.easeui.model.EaseNotifier;
@@ -86,8 +75,6 @@ public class DemoHelper {
 
 	private Map<String, EaseUser> contactList;
 
-	private Map<String, RobotUser> robotList;
-
 	private UserProfileManager userProManager;
 
 	private static DemoHelper instance = null;
@@ -121,7 +108,6 @@ public class DemoHelper {
 
     private Context appContext;
 
-    private CallReceiver callReceiver;
 
     private InviteMessgeDao inviteMessgeDao;
     private UserDao userDao;
@@ -320,25 +306,6 @@ public class DemoHelper {
                 }
             }
         });
-        //set emoji icon provider
-        easeUI.setEmojiconInfoProvider(new EaseEmojiconInfoProvider() {
-            
-            @Override
-            public EaseEmojicon getEmojiconInfo(String emojiconIdentityCode) {
-                EaseEmojiconGroupEntity data = EmojiconExampleGroupData.getData();
-                for(EaseEmojicon emojicon : data.getEmojiconList()){
-                    if(emojicon.getIdentityCode().equals(emojiconIdentityCode)){
-                        return emojicon;
-                    }
-                }
-                return null;
-            }
-
-            @Override
-            public Map<String, Object> getTextEmojiconMapping() {
-                return null;
-            }
-        });
         
         //set notification options, will use default if you don't set it
         easeUI.getNotifier().setNotificationInfoProvider(new EaseNotificationInfoProvider() {
@@ -387,12 +354,6 @@ public class DemoHelper {
             public Intent getLaunchIntent(EMMessage message) {
             	// you can set what activity you want display when user click the notification
                 Intent intent = new Intent(appContext, ChatActivity.class);
-                // open calling activity if there is call
-                if(isVideoCalling){
-                    intent = new Intent(appContext, VideoCallActivity.class);
-                }else if(isVoiceCalling){
-                    intent = new Intent(appContext, VoiceCallActivity.class);
-                }else{
                     ChatType chatType = message.getChatType();
                     if (chatType == ChatType.Chat) { // single chat message
                         intent.putExtra("userId", message.getFrom());
@@ -402,12 +363,9 @@ public class DemoHelper {
                         intent.putExtra("userId", message.getTo());
                         if(chatType == ChatType.GroupChat){
                             intent.putExtra("chatType", Constant.CHATTYPE_GROUP);
-                        }else{
-                            intent.putExtra("chatType", Constant.CHATTYPE_CHATROOM);
                         }
                         
                     }
-                }
                 return intent;
             }
         });
@@ -461,13 +419,6 @@ public class DemoHelper {
             }
         };
 
-        IntentFilter callFilter = new IntentFilter(EMClient.getInstance().callManager().getIncomingCallBroadcastAction());
-        if(callReceiver == null){
-            callReceiver = new CallReceiver();
-        }
-
-        //register incoming call receiver
-        appContext.registerReceiver(callReceiver, callFilter);    
         //register connection listener
         EMClient.getInstance().addConnectionListener(connectionListener);       
         //register group and contact event listener
@@ -814,10 +765,6 @@ public class DemoHelper {
         if(username.equals(EMClient.getInstance().getCurrentUser()))
             return getUserProfileManager().getCurrentUserInfo();
         user = getContactList().get(username);
-        if(user == null && getRobotList() != null){
-            user = getRobotList().get(username);
-        }
-
         // if user is not in your contacts, set inital letter for him/her
         if(user == null){
             user = new EaseUser(username);
@@ -853,13 +800,6 @@ public class DemoHelper {
                     //get message body
                     EMCmdMessageBody cmdMsgBody = (EMCmdMessageBody) message.getBody();
                     final String action = cmdMsgBody.action();//获取自定义action
-                    //red packet code : 处理红包回执透传消息
-                    if(!easeUI.hasForegroundActivies()){
-                        if (action.equals(RPConstant.REFRESH_GROUP_RED_PACKET_ACTION)){
-                            RedPacketUtil.receiveRedPacketAckMessage(message);
-                            broadcastManager.sendBroadcast(new Intent(RPConstant.REFRESH_GROUP_RED_PACKET_ACTION));
-                        }
-                    }
 
                     if (action.equals("__Call_ReqP2P_ConferencePattern")) {
                         String title = message.getStringAttribute("em_apns_ext", "conference call");
@@ -1013,17 +953,6 @@ public class DemoHelper {
     	}
     	return username;
     }
-
-	public void setRobotList(Map<String, RobotUser> robotList) {
-		this.robotList = robotList;
-	}
-
-	public Map<String, RobotUser> getRobotList() {
-		if (isLoggedIn() && robotList == null) {
-			robotList = demoModel.getRobotList();
-		}
-		return robotList;
-	}
 
 	 /**
      * update user list to cache and database
@@ -1338,7 +1267,6 @@ public class DemoHelper {
         isGroupAndContactListenerRegisted = false;
         
         setContactList(null);
-        setRobotList(null);
         getUserProfileManager().reset();
         DemoDBManager.getInstance().closeDB();
     }

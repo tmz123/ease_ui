@@ -3,7 +3,6 @@ package com.hyphenate.chatuidemo;
 import android.content.Context;
 
 import com.hyphenate.chatuidemo.db.UserDao;
-import com.hyphenate.chatuidemo.domain.RobotUser;
 import com.hyphenate.chatuidemo.utils.PreferenceManager;
 import com.hyphenate.easeui.domain.EaseUser;
 import com.hyphenate.easeui.model.EaseAtMessageHelper;
@@ -49,22 +48,6 @@ public class DemoModel {
 
     public String getCurrentUsernName(){
         return PreferenceManager.getInstance().getCurrentUsername();
-    }
-    
-    public Map<String, RobotUser> getRobotList(){
-        UserDao dao = new UserDao(context);
-        return dao.getRobotUser();
-    }
-
-    public boolean saveRobotList(List<RobotUser> robotList){
-        UserDao dao = new UserDao(context);
-        dao.saveRobotUser(robotList);
-        return true;
-    }
-    
-    public void setSettingMsgNotification(boolean paramBoolean) {
-        PreferenceManager.getInstance().setSettingMsgNotification(paramBoolean);
-        valueCache.put(Key.VibrateAndPlayToneOn, paramBoolean);
     }
 
     public boolean getSettingMsgNotification() {

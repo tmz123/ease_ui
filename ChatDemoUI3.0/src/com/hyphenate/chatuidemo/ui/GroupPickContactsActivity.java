@@ -34,6 +34,7 @@ import com.hyphenate.chatuidemo.DemoHelper;
 import com.hyphenate.chatuidemo.R;
 import com.hyphenate.easeui.adapter.EaseContactAdapter;
 import com.hyphenate.easeui.domain.EaseUser;
+import com.hyphenate.easeui.ui.EaseBaseActivity;
 import com.hyphenate.easeui.widget.EaseSidebar;
 
 import java.util.ArrayList;
@@ -41,8 +42,8 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class GroupPickContactsActivity extends BaseActivity {
-	/** if this is a new group */
+public class GroupPickContactsActivity extends EaseBaseActivity {
+    /** if this is a new group */
 	protected boolean isCreatingNewGroup;
 	private PickContactAdapter contactAdapter;
 	/** members already in the group */

@@ -1,10 +1,14 @@
 [
     {
-        "merged": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-mdpi/em_unread_count_bg.9.png",
-        "source": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/res/drawable-mdpi/em_unread_count_bg.9.png"
+        "merged": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-mdpi/em_unread_count_bg.9.png",
+        "source": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/res/drawable-mdpi/em_unread_count_bg.9.png"
     },
     {
-        "merged": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-mdpi/em_logo_uidemo.png",
-        "source": "/Users/tangmingzhang/myprojects/examples/ChatDemoUI3.0/res/drawable-mdpi/em_logo_uidemo.png"
+        "merged": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-mdpi/ic_funchat.png",
+        "source": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/res/drawable-mdpi/ic_funchat.png"
+    },
+    {
+        "merged": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-mdpi/em_logo_uidemo.png",
+        "source": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/res/drawable-mdpi/em_logo_uidemo.png"
     }
 ]

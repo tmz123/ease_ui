@@ -11,17 +11,14 @@
   */
 package com.hyphenate.chatuidemo.receiver;
 
-import com.hyphenate.chat.EMChatService;
-import com.hyphenate.util.EMLog;
-
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-/**
- * @deprecated instead of use {@link EMReceiver}
- *
- */
+import com.hyphenate.chat.EMChatService;
+import com.hyphenate.util.EMLog;
+
+
 public class StartServiceReceiver extends BroadcastReceiver{
 
 	@Override

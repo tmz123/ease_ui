@@ -1,15 +1,5 @@
 package com.hyphenate.chatuidemo.ui;
 
-import java.io.ByteArrayOutputStream;
-
-import com.bumptech.glide.Glide;
-import com.hyphenate.EMValueCallBack;
-import com.hyphenate.chat.EMClient;
-import com.hyphenate.chatuidemo.DemoHelper;
-import com.hyphenate.chatuidemo.R;
-import com.hyphenate.easeui.domain.EaseUser;
-import com.hyphenate.easeui.utils.EaseUserUtils;
-
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
 import android.app.ProgressDialog;
@@ -30,9 +20,20 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class UserProfileActivity extends BaseActivity implements OnClickListener{
-	
-	private static final int REQUESTCODE_PICK = 1;
+import com.bumptech.glide.Glide;
+import com.hyphenate.EMValueCallBack;
+import com.hyphenate.chat.EMClient;
+import com.hyphenate.chatuidemo.DemoHelper;
+import com.hyphenate.chatuidemo.R;
+import com.hyphenate.easeui.domain.EaseUser;
+import com.hyphenate.easeui.ui.EaseBaseActivity;
+import com.hyphenate.easeui.utils.EaseUserUtils;
+
+import java.io.ByteArrayOutputStream;
+
+public class UserProfileActivity extends EaseBaseActivity implements OnClickListener {
+
+    private static final int REQUESTCODE_PICK = 1;
 	private static final int REQUESTCODE_CUTTING = 2;
 	private ImageView headAvatar;
 	private ImageView headPhotoUpdate;

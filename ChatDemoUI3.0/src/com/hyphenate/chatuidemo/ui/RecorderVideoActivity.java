@@ -46,6 +46,7 @@ import android.widget.VideoView;
 
 import com.hyphenate.chatuidemo.R;
 import com.hyphenate.chatuidemo.video.util.Utils;
+import com.hyphenate.easeui.ui.EaseBaseActivity;
 import com.hyphenate.easeui.utils.EaseCommonUtils;
 import com.hyphenate.util.EMLog;
 import com.hyphenate.util.PathUtil;
@@ -57,8 +58,8 @@ import java.io.IOException;
 import java.util.Collections;
 import java.util.List;
 
-public class RecorderVideoActivity extends BaseActivity implements
-		OnClickListener, SurfaceHolder.Callback, OnErrorListener,
+public class RecorderVideoActivity extends EaseBaseActivity implements
+        OnClickListener, SurfaceHolder.Callback, OnErrorListener,
 		OnInfoListener {
 	private static final String TAG = "RecorderVideoActivity";
 	private final static String CLASS_LABEL = "RecordActivity";

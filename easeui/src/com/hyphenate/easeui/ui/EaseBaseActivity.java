@@ -33,8 +33,7 @@ public class EaseBaseActivity extends FragmentActivity {
     @Override
     protected void onCreate(Bundle arg0) {
         super.onCreate(arg0);
-        //http://stackoverflow.com/questions/4341600/how-to-prevent-multiple-instances-of-an-activity-when-it-is-launched-with-differ/
-        // should be in launcher activity, but all app use this can avoid the problem
+        // 防止启动多个相同的activity
         if(!isTaskRoot()){
             Intent intent = getIntent();
             String action = intent.getAction();

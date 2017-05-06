@@ -44,7 +44,6 @@ import com.hyphenate.easeui.utils.EaseCommonUtils;
  */
 public class LoginActivity extends EaseBaseActivity {
 	private static final String TAG = "LoginActivity";
-	public static final int REQUEST_CODE_SETNICK = 1;
 	private EditText usernameEditText;
 	private EditText passwordEditText;
 
@@ -98,9 +97,10 @@ public class LoginActivity extends EaseBaseActivity {
 			}
 		});
 
-		if (DemoHelper.getInstance().getCurrentUsernName() != null) {
-			usernameEditText.setText(DemoHelper.getInstance().getCurrentUsernName());
-		}
+        String name = DemoHelper.getInstance().getCurrentUsernName();
+        if (name != null) {
+            usernameEditText.setText(name);
+        }
 	}
 
 	/**

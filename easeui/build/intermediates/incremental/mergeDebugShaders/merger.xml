@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/tangmingzhang/myprojects/examples/easeui/src/main/shaders"/></dataSet><dataSet config="debug"><source path="/Users/tangmingzhang/myprojects/examples/easeui/build-types/debug/shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/Users/tangmingzhang/myprojects/ease_ui/easeui/src/main/shaders"/></dataSet><dataSet config="debug"><source path="/Users/tangmingzhang/myprojects/ease_ui/easeui/build-types/debug/shaders"/></dataSet></merger>

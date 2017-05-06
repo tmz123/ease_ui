@@ -282,7 +282,7 @@ public class EaseNotifier {
     }
 
     /**
-     * vibrate and  play tone
+     * vibrate and  play tone：震动与提示音
      */
     public void vibrateAndPlayTone(EMMessage message) {
         if(message != null){
