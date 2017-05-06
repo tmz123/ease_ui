@@ -38,8 +38,7 @@ import static com.hyphenate.chatuidemo.R.id.ll_user_profile;
 
 /**
  * settings screen
- * 
- * 
+ *
  */
 @SuppressWarnings({"FieldCanBeLocal"})
 public class SettingsFragment extends Fragment implements OnClickListener {

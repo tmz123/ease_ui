@@ -2,10 +2,11 @@
 <resources>
 
     <color name="common_top_bar_blue">#4ebcd3</color>
+    <color name="qq_blue">#00acff</color>
+    <color name="qq_red">#ff0000</color>
+    <color name="qq_red_dark">#aa0000</color>
     <color name="btn_login_normal">#00acff</color>
     <color name="btn_login_pressed">#46678d</color>
-    <color name="btn_logout_normal">#d33f3f</color>
-    <color name="btn_logout_pressed">#DA5A4D</color>
     <color name="btn_register_normal">#ffffff</color>
     <color name="btn_register_pressed">#00acff</color>
     <color name="common_bottom_bar_normal_bg">#2d2f31</color>

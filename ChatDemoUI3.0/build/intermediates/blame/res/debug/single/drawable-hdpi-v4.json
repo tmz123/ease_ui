@@ -72,12 +72,12 @@
         "source": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/exploded-aar/ChatDemoUI3.0/EaseUI/unspecified/res/drawable-hdpi-v4/ee_13.png"
     },
     {
-        "merged": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-hdpi-v4/ee_10.png",
-        "source": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/exploded-aar/ChatDemoUI3.0/EaseUI/unspecified/res/drawable-hdpi-v4/ee_10.png"
-    },
-    {
         "merged": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-hdpi-v4/ease_input_bar_bg_active.9.png",
         "source": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/exploded-aar/ChatDemoUI3.0/EaseUI/unspecified/res/drawable-hdpi-v4/ease_input_bar_bg_active.9.png"
+    },
+    {
+        "merged": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-hdpi-v4/ee_10.png",
+        "source": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/exploded-aar/ChatDemoUI3.0/EaseUI/unspecified/res/drawable-hdpi-v4/ee_10.png"
     },
     {
         "merged": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-hdpi-v4/ee_27.png",
@@ -312,12 +312,12 @@
         "source": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/exploded-aar/ChatDemoUI3.0/EaseUI/unspecified/res/drawable-hdpi-v4/ee_16.png"
     },
     {
-        "merged": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-hdpi-v4/ease_ic_launcher.png",
-        "source": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/exploded-aar/ChatDemoUI3.0/EaseUI/unspecified/res/drawable-hdpi-v4/ease_ic_launcher.png"
-    },
-    {
         "merged": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-hdpi-v4/ease_chatfrom_voice_playing_f3.png",
         "source": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/exploded-aar/ChatDemoUI3.0/EaseUI/unspecified/res/drawable-hdpi-v4/ease_chatfrom_voice_playing_f3.png"
+    },
+    {
+        "merged": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-hdpi-v4/ease_ic_launcher.png",
+        "source": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/exploded-aar/ChatDemoUI3.0/EaseUI/unspecified/res/drawable-hdpi-v4/ease_ic_launcher.png"
     },
     {
         "merged": "/Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/build/intermediates/res/merged/debug/drawable-hdpi-v4/ease_appitem_del_btn_pressed.png",

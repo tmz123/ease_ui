@@ -142,7 +142,7 @@ ADDED from /Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/AndroidManifest
 	android:allowBackup
 		ADDED from /Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/AndroidManifest.xml:51:9-35
 	android:icon
-		ADDED from /Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/AndroidManifest.xml:52:9-48
+		ADDED from /Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/AndroidManifest.xml:52:9-42
 	android:name
 		ADDED from /Users/tangmingzhang/myprojects/ease_ui/ChatDemoUI3.0/AndroidManifest.xml:50:9-40
 activity#com.hyphenate.chatuidemo.ui.MainActivity
